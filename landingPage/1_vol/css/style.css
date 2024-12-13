@@ -5,21 +5,23 @@
 }
 .navbar-section{
     border: 1px dashed red;
-    background-color: #A8CD89;
+    /* background-color: #A8CD89; */
+    background-color: #2d6760;
+    
 }
 .navbar-container{
     border: 1px dashed black;
-    background-color: #A8CD89;
+    background-color: #2d6760;   
 }
 .navbar{
-    background-color: #A8CD89;
+    background-color: #2d6760;
 }
 .navbar-row{
     border: 1px dashed red;
-    background-color: #A8CD89;
+    background-color: #2d6760;
 }
 .navbar-brand, .nav-link{
-    color:#000;
+    color:#fff;
 }
 /* -----dark mode start here----- */
 .switch {
@@ -81,12 +83,10 @@
 
    /* -----header start here----- */
    .header-section{
-    margin-top: 51px;
-    border:1px dashed red
+    margin-top: 53px;
    }
    .header-container {
     position: relative; /* To position the pseudo-element */
-    border: 1px solid black;
     height: 70vh;
     background-color: lightblue; /* Fallback color */
     overflow: hidden; /* To ensure pseudo-element stays within the container */
@@ -99,13 +99,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero-background.jpg');
-    background-size:cover;
+    background: linear-gradient(rgba(144, 238, 144, 0.5), rgba(144, 238, 144, 0.5)), 
+                url('../images/hero-background.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust this value for your desired transparency */
+    opacity: 0.5; /* Adjust this value for overall transparency */
     z-index: 1; /* Place it behind content */
 }
+
 
 .header-container .content {
     position: relative;
@@ -113,20 +115,50 @@
     color: black; /* Adjust text color as needed */
     text-align: center;
     padding-top: 20px;
+    height: 70vh;
 }
-
-   /* -----header end here----- */
+.content .get-started-div{
+    width:150px;
+    height:50px;
+}
+.content .get-started-btn{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color:#fff;
+}
+.content .content-heading{
+    margin-top:150px;
+    color:#fff;
+}
+.content .content-para{
+    margin-top:30px;
+    color:#fff;
+}
+.content .get-started-div{
+    margin-top:30px;
+}
+/* -----header end here----- */
 
 
 
    /* -----about start here----- */
    .about-section{
-    border:1px dashed red
+    border:1px dashed red;
+    margin-top:2px;
    }
    .about-container{
     border:1px solid black;
-    height:70vh;
-    background-color: lightcyan;
+    height:100vh;
+    background-color: white;
+   }
+   .about-col-details{
+    border:1px dashed black;
+   }
+   .about-col-image{
+    border:1px dashed black;
    }
    /* -----about end here----- */
 
