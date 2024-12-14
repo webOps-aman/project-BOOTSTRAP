@@ -146,20 +146,17 @@
 
    /* -----about start here----- */
    .about-section{
-    border:1px dashed red;
     margin-top:2px;
    }
-   .about-container{
-    border:1px solid black;
-    height:100vh;
-    background-color: white;
-   }
-   .about-col-details{
-    border:1px dashed black;
-   }
+   
    .about-col-image{
-    border:1px dashed black;
+    height:400px;
+
    }
+   .about-col-image img {
+    height: 100%;
+    object-fit: cover;
+}
    /* -----about end here----- */
 
 
@@ -174,3 +171,5 @@
         background-color: orange;
        }
        /* -----services end here----- */
+
+       
