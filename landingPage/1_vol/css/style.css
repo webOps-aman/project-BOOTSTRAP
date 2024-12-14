@@ -6,19 +6,19 @@
 .navbar-section{
     border: 1px dashed red;
     /* background-color: #A8CD89; */
-    background-color: #2d6760;
+    background-color: #17153B;
     
 }
 .navbar-container{
     border: 1px dashed black;
-    background-color: #2d6760;   
+    background-color: #17153B;   
 }
 .navbar{
-    background-color: #2d6760;
+    background-color: #17153B;
 }
 .navbar-row{
     border: 1px dashed red;
-    background-color: #2d6760;
+    background-color: #17153B;
 }
 .navbar-brand, .nav-link{
     color:#fff;
@@ -99,7 +99,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(144, 238, 144, 0.5), rgba(144, 238, 144, 0.5)), 
+    background: linear-gradient(rgba(67, 61, 139, 0.5), 
+    rgba(67, 61, 139, 0.5)), 
                 url('../images/hero-background.jpg');
     background-size: cover;
     background-position: center;
@@ -151,11 +152,13 @@
    
    .about-col-image{
     height:400px;
-
+    /* box-shadow: 0 0 5px 0 black; */
    }
    .about-col-image img {
     height: 100%;
     object-fit: cover;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 10px;
 }
    /* -----about end here----- */
 
@@ -163,13 +166,98 @@
 
     /* -----services start here----- */
     .services-section{
-        border:1px dashed red
+        border:1px dashed red;
+        background-color: #F8FAFC;
+        margin-top:2px;
        }
        .services-container{
         border:1px solid black;
-        height:70vh;
-        background-color: orange;
+        /* height:100vh; */
+        
        }
+
+       :root{ --main-color: #CD3C81; }
+.serviceBox{
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0 30px 30px;
+    position: relative;
+    z-index: 1;
+}
+.serviceBox:before,
+.serviceBox:after{
+    content: "";
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+}
+.serviceBox:after{
+    background-color: var(--main-color);
+    border-radius: 30px;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: var(--main-color);
+    font-size: 35px;
+    line-height: 67px;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: relative;
+}
+.serviceBox .service-icon i{line-height:inherit}
+.serviceBox .service-icon:before,
+.serviceBox .service-icon:after{
+    content: '';
+    background-color: var(--main-color);
+    height: 70px;
+    width: 140px;
+    border-radius: 0 0 100px 100px/0 0 100px 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+.serviceBox .service-icon:before{
+    height: 10px;
+    width: 170px;
+    border-radius: 10px 10px 0 0;
+    top: auto;
+    bottom: 50%;
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 4px rgba(0,0,0,0.05);
+    margin: 0 0 10px;
+}
+.serviceBox .description{
+    color: #999;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+}
+.serviceBox.orange{ --main-color: #e77a1b; }
+.serviceBox.blue{ --main-color: #0C6CBA; }
+.serviceBox.green{ --main-color: #4CA131; }
+@media only screen and (max-width: 1199px){
+    .serviceBox{ margin: 0 0 30px; }
+}
        /* -----services end here----- */
 
        
