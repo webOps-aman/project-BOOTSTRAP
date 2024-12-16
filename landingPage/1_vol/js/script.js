@@ -18,7 +18,7 @@ let auto_text = document.querySelector(".auto-text");
 				careerIndex = 0;
 			}
 
-			setTimeout(updateText, 300);
+			setTimeout(updateText, 500);
 			
 		}
 		updateText()
