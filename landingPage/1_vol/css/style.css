@@ -148,16 +148,20 @@
    /* -----about start here----- */
    .about-section{
     margin-top:2px;
-   }
-   
+    /* background-image: url(../images/background-10.png); */
+    background-image: url(../images/background-10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   }  
    .about-col-image{
-    height:400px;
+    height:500px;
     /* box-shadow: 0 0 5px 0 black; */
    }
    .about-col-image img {
     height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 10px 0 black;
+    object-fit: contain;
+    /* box-shadow: 0 0 10px 0 black; */
     border-radius: 10px;
 }
    /* -----about end here----- */
@@ -168,6 +172,9 @@
     .services-section{
         /* background-color: #D9EAFD; */
         margin-top:2px;
+        background-image: url(../images/background-3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
        }
 
 :root{ --main-color: #0C6CBA; }
