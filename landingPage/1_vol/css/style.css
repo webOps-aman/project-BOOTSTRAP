@@ -264,4 +264,99 @@
 }
        /* -----services end here----- */
 
-       
+/* -----achievements end here----- */
+.achievements-section{
+    background-image: url(../images/background-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+}
+
+:root{ --achievements-color: #0C6CBA; }
+.main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: 100%;
+    padding: 10px 0 0;
+    margin: 0 5px 15px 0;
+    float: left;
+}
+.main-timeline .timeline-content{
+    background: linear-gradient(to right,var(--achievements-color),var(--achievements-color) 25%,transparent 25%,transparent 75%,var(--achievements-color) 75%);
+    min-height: 120px;
+    padding:30px 50px;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline-content:before{
+    content: '';
+    background: linear-gradient(to right,#fff,#eee);
+    border-radius: 40px;
+    border: 5px solid #fff;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    z-index: -1;
+}
+
+.main-timeline .title{
+    color: var(--achievements-color);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+.main-timeline .description{
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.achievements-col{
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.counter-col{
+    height: 100%;
+}
+.counter-area{
+    box-shadow: 0 0 10px 0 #0C6CBA;
+    border-radius: 20px;
+}
+
+.counter-number{
+    text-align: center;
+    padding:3px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    /* border:1px solid black; */
+    height: 70%;
+    color:#0C6CBA;
+}
+.counter-title{
+    background-color: #0C6CBA;
+}
+.counter-title p{
+    text-align: center;
+    border:1px solid #0C6CBA;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+/* -----achievements end here----- */
